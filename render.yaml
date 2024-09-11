@@ -1,0 +1,3 @@
+env: custom
+startCommand: none
+publicDir: .
