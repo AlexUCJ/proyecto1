@@ -21,11 +21,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             font-family: 'Times New Roman', Times, serif;
+            background: url('cmov.gif') no-repeat center center fixed;
+            background-size: cover; /* Esta propiedad asegura que el fondo ocupe todo el contenedor */
         }
 
         .container {
@@ -75,22 +73,23 @@
         }
        
         @media only screen and (max-width: 600px) {
-            body {
-                background-size: contain;
-            }
-
             .button {
-                font-size: 16px;  /* Reduce el tamaño del botón en pantallas pequeñas */
+                font-size: 16px;
                 padding: 10px 20px;
             }
-            
+
             .message {
-                font-size: 18px;  /* Reduce el tamaño del texto en pantallas pequeñas */
+                font-size: 18px;
                 padding: 15px;
             }
 
             video {
-                max-width: 100%;  /* Asegura que el video se ajuste a pantallas pequeñas */
+                max-width: 100%;
+            }
+
+            /* Ajuste específico para móviles */
+            body {
+                background-size: cover;
             }
         }
 
