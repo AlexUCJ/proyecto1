@@ -18,12 +18,10 @@
             overflow: hidden; /* Evita el desplazamiento innecesario */
         }
         body {
-            margin: 0;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -70,15 +68,10 @@
 
         video {
             display: none;
-            width: 480px;; /* Asegura que ocupe el ancho completo del contenedor */
-            height: 270px; /* Relación de aspecto 16:9 */
+            width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
             max-width: 480px; /* Limita el tamaño máximo en pantallas grandes */
             border: 5px solid white;
             border-radius: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
        
         @media only screen and (max-width: 600px) {
